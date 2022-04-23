@@ -1,11 +1,16 @@
-import { Text, TextInput, StyleSheet, TouchableOpacity, Alert } from "react-native";
+import {
+  Text,
+  TextInput,
+  StyleSheet,
+  TouchableOpacity,
+  Alert,
+} from "react-native";
 import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Auth, DataStore } from "aws-amplify";
 
 import { useAuthContext } from "../../context";
-import { User } from '../../models';
-
+import { User } from "../../models";
 
 export const ProfileScreen = () => {
   const { sub, setDbUser, dbUser } = useAuthContext();
@@ -15,18 +20,26 @@ export const ProfileScreen = () => {
   const [name, setName] = useState(dbUser?.name || "");
   const [address, setAddress] = useState(dbUser?.address || "");
 
-
   const onSave = async () => {
-    (dbUser) ? await updateUser() : await createUser();
-    Alert.alert("", "Saved");
+    try {
+      dbUser ? await updateUser() : await createUser();
+      Alert.alert("", "Saved");
+    } catch (e) {
+      Alert.alert("Error", e.message);
+    }
   };
 
   const createUser = async () => {
     try {
       const user = await DataStore.save(
-        new User({ name, address, latitude: parseFloat(latitude), longitude: parseFloat(longitude), sub })
+        new User({
+          name,
+          address,
+          latitude: parseFloat(latitude),
+          longitude: parseFloat(longitude),
+          sub,
+        })
       );
-
       setDbUser(user);
     } catch (e) {
       Alert.alert("Error", e.message);
@@ -34,15 +47,17 @@ export const ProfileScreen = () => {
   };
 
   const updateUser = async () => {
-    const user = await DataStore.save(User.copyOf(dbUser, (updated) => {
-      updated.name = name;
-      updated.address = address;
-      updated.latitude = parseFloat(latitude);
-      updated.longitude = parseFloat(longitude);
-    }));
+    const user = await DataStore.save(
+      User.copyOf(dbUser, (updated) => {
+        updated.name = name;
+        updated.address = address;
+        updated.latitude = parseFloat(latitude);
+        updated.longitude = parseFloat(longitude);
+      })
+    );
 
     setDbUser(user);
-  }
+  };
 
   return (
     <SafeAreaView>
@@ -73,14 +88,20 @@ export const ProfileScreen = () => {
         style={styles.input}
         keyboardType="numeric"
       />
-      <TouchableOpacity style={[styles.saveButton, styles.button]} onPress={onSave}>
+      <TouchableOpacity
+        style={[styles.saveButton, styles.button]}
+        onPress={onSave}
+      >
         <Text style={styles.buttonText}>Save</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => Auth.signOut()} style={[styles.singOutButton, styles.button]}>
+      <TouchableOpacity
+        onPress={() => Auth.signOut()}
+        style={[styles.singOutButton, styles.button]}
+      >
         <Text style={styles.buttonText}>Sign out</Text>
       </TouchableOpacity>
-    </SafeAreaView >
+    </SafeAreaView>
   );
 };
 
@@ -102,17 +123,16 @@ const styles = StyleSheet.create({
     color: "white",
     padding: 12,
     margin: 10,
-    borderRadius: 5
+    borderRadius: 5,
   },
   saveButton: {
     backgroundColor: "orange",
   },
   singOutButton: {
-    backgroundColor: "lightgrey"
+    backgroundColor: "lightgrey",
   },
   buttonText: {
     fontSize: 17,
     color: "white",
-
-  }
+  },
 });

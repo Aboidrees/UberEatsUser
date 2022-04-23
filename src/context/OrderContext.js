@@ -8,39 +8,32 @@ import { useNavigation } from "@react-navigation/native";
 const OrderContext = createContext();
 
 export const OrderContextProvider = ({ children }) => {
-
   const { dbUser } = useAuthContext();
-  const { restaurant, totalPrice, basket, basketDishes } = useBasketContext();
+  const {
+    restaurant: Restaurant,
+    totalPrice: total,
+    basket,
+    basketDishes,
+  } = useBasketContext();
   const [orders, setOrders] = useState([]);
 
   const navigation = useNavigation();
 
   useEffect(() => {
-    dbUser && DataStore.query(Order, o => o.userID("eq", dbUser?.id)).then(setOrders);
-  }, [dbUser])
-
+    dbUser &&
+      DataStore.query(Order, (o) => o.userID("eq", dbUser?.id)).then(setOrders);
+  }, [dbUser]);
 
   const createOrder = async () => {
     // Create the order
     const newOrder = await DataStore.save(
-      new Order({
-        userID: dbUser.id,
-        Restaurant: restaurant,
-        status: "NEW",
-        total: totalPrice
-      })
+      new Order({ userID: dbUser.id, Restaurant, total, status: "NEW" })
     );
 
     // add all basket to order
     await Promise.all(
-      basketDishes.map(
-        basketDish => DataStore.save(
-          new OrderDish({
-            quantity: basketDish.quantity,
-            orderID: newOrder.id,
-            Dish: basketDish.Dish
-          })
-        )
+      basketDishes.map(({ quantity, Dish }) =>
+        DataStore.save(new OrderDish({ orderID: newOrder.id, quantity, Dish }))
       )
     );
 
@@ -48,12 +41,14 @@ export const OrderContextProvider = ({ children }) => {
     await DataStore.delete(basket);
 
     setOrders([...orders, newOrder]);
-    navigation.navigate("My Orders");
-  }
+    navigation.navigate("OrdersTab");
+  };
 
   const getOrders = async (id) => {
     const order = await DataStore.query(Order, id);
-    const orderDishes = await DataStore.query(OrderDish, od => od.orderID("eq", id));
+    const orderDishes = await DataStore.query(OrderDish, (od) =>
+      od.orderID("eq", id)
+    );
 
     return { ...order, dishes: orderDishes };
   };
