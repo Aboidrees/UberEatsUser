@@ -6,7 +6,7 @@ import { useAuthContext } from "../context";
 import {
   RestaurantDetailsScreen,
   DishDetailsScreen,
-  ProfileScreen,
+  EditProfileScreen,
   HomeScreen,
   OrdersScreen,
   OrderDetailsScreen,
@@ -23,7 +23,7 @@ const RootNavigator = () => {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       {dbUser && <Stack.Screen name="HomeTabs" component={HomeTabs} />}
-      {!dbUser && <Stack.Screen name="Profile" component={ProfileScreen} />}
+      {!dbUser && <Stack.Screen name="Profile" component={EditProfileScreen} />}
     </Stack.Navigator>
   );
 };
