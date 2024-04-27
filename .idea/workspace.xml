@@ -4,112 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e7ec7b-49f9-4cfa-91bb-aab27264ac19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/UberEatsUser.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/hooks/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/debug.keystore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/dev/aboidrees/ubereats/user/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/dev/aboidrees/ubereats/user/MainApplication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/drawable-hdpi/splashscreen_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/drawable-mdpi/splashscreen_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/drawable-xhdpi/splashscreen_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/drawable-xxhdpi/splashscreen_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/drawable-xxxhdpi/splashscreen_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/drawable/rn_edit_text_material.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/drawable/splashscreen.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/values-night/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eas.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/UberEatsUser.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/API.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LoadingIndicator/LoadingIndicator.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/OrderDetailsHeader/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RestaurantHeader/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/AuthContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/RestaurantContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/mutations.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/queries.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/subscriptions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useLocation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/DishDetailsScreen/DishDetailsScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/DishDetailsScreen/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/HomeScreen/HomeScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/HomeScreen/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/OrderDetailsScreen/OrderDetailsScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/OrderDetailsScreen/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/OrdersScreen/OrdersScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/ProfileScreen/ProfileScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/ProfileScreen/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/RestaurantDetailsScreen/RestaurantDetailsScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/RestaurantDetailsScreen/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/urils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BasketDishItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasketDishItem/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DishListItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DishListItem/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OrderDetailsHeader/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OrderListItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OrderListItem/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RestaurantHeader/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RestaurantItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RestaurantItem/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/AuthContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/BasketContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/OrderContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/OrderContext.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navigation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/BasketScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/BasketScreen/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/DishDetailsScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/HomeScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/OrderDetailsScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/OrdersScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/OrdersScreen/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/ProfileScreen/EditProfileScreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/ProfileScreen/ShowProfileScreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/ProfileScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/RestaurantDetailsScreen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    <list default="true" id="d8e7ec7b-49f9-4cfa-91bb-aab27264ac19" name="Changes" comment="App maintenance and upgrade packages">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/DishDetailsScreen/DishDetailsScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/DishDetailsScreen/DishDetailsScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/RestaurantDetailsScreen/RestaurantDetailsScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/RestaurantDetailsScreen/RestaurantDetailsScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,8 +91,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714047334447</updated>
-      <workItem from="1714047335939" duration="32032000" />
+      <workItem from="1714047335939" duration="33121000" />
     </task>
+    <task id="LOCAL-00001" summary="App maintenance and upgrade packages">
+      <option name="closed" value="true" />
+      <created>1714213300965</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714213300965</updated>
+    </task>
+    <task id="LOCAL-00002" summary="App maintenance and upgrade packages">
+      <option name="closed" value="true" />
+      <created>1714213375813</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714213375814</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,5 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="App maintenance and upgrade packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="App maintenance and upgrade packages" />
   </component>
 </project>
