@@ -168,9 +168,10 @@ type EagerCourier = {
   };
   readonly id: string;
   readonly name?: string | null;
-  readonly latitude?: string | null;
-  readonly longitude?: string | null;
+  readonly latitude?: number | null;
+  readonly longitude?: number | null;
   readonly transportationMode?: TransportationModes | keyof typeof TransportationModes | null;
+  readonly sub: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -182,9 +183,10 @@ type LazyCourier = {
   };
   readonly id: string;
   readonly name?: string | null;
-  readonly latitude?: string | null;
-  readonly longitude?: string | null;
+  readonly latitude?: number | null;
+  readonly longitude?: number | null;
   readonly transportationMode?: TransportationModes | keyof typeof TransportationModes | null;
+  readonly sub: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
